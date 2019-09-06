@@ -1,0 +1,128 @@
+<HTML>
+<HEAD>
+<TITLE>WrapperController.lvlib:Quarantine.vi</TITLE>
+<META NAME="Author" CONTENT="">
+<META NAME="GENERATOR" CONTENT="G Development Environment">
+</HEAD>
+<BODY BGCOLOR="#FFFFFF">
+<A NAME="WrapperController.lvlib:Quarantine.vi"></A><H2>WrapperController.lvlib:Quarantine.vi</H2>
+<P>Contiene las funciones de cuarentena</P>
+<P><IMG SRC="WrapperController_lvlib_Quarantinec.png" ALT="WrapperController.lvlib:Quarantine.vi"></P>
+<Table>
+</Table>
+<HR>
+<A NAME="WrapperController.lvlib:CheckQuaratine.vi"></A><H2>WrapperController.lvlib:CheckQuaratine.vi</H2>
+<P>Función que consulta el estado de cuarentena de una pieza</P>
+<P></P>
+<P>Controles:</P>
+<P>    - <B>basicInformation in</B>: datos necesarios para hacer la subida.</P>
+<P>    - <B>unitIds</B>: arrray de identificadores de piezas</P>
+<P>    - <B>error in (no error)</B>: Entrada de errores</P>
+<P></P>
+<P>Indicadores:</P>
+<P>    - <B>basicInformtion out</B>: salida de los datos basicos actualizados</P>
+<P>    - <B>ArrayDeRespuestas</B>: respuesta obtenida del servidor</P>
+<P>    - <B>error out</B>: error producido al ejecutarse o el error de entrada si es que habia</P>
+<P><IMG SRC="WrapperController_lvlib_CheckQuaratinec.png" ALT="WrapperController.lvlib:CheckQuaratine.vi"></P>
+<P><IMG SRC="WrapperController_lvlib_CheckQuaratinep.png" ALT="WrapperController.lvlib:CheckQuaratine.vi"></P>
+<P><IMG SRC="WrapperController_lvlib_CheckQuaratined.png" ALT="WrapperController.lvlib:CheckQuaratine.vi"></P>
+<P><IMG SRC="WrapperController_lvlib_CheckQuaratined1.png" ALT="WrapperController.lvlib:CheckQuaratine.vi"></P>
+<Table>
+</Table>
+<HR>
+<A NAME="WrapperController.lvlib:GetQuarantineList.vi"></A><H2>WrapperController.lvlib:GetQuarantineList.vi</H2>
+<P>Función que consulta la lista de cuarentena de un tipo de pieza</P>
+<P></P>
+<P>Controles:</P>
+<P>    - <B>basicInformation in</B>: datos necesarios para hacer la subida.</P>
+<P>    - <B>unitType</B>: WERS</P>
+<P>    - <B>error in (no error)</B>: Entrada de errores</P>
+<P></P>
+<P>Indicadores:</P>
+<P>    - <B>basicInformtion out</B>: salida de los datos basicos actualizados</P>
+<P>    - <B>ArrayDeRespuestas</B>: respuesta obtenida del servidor</P>
+<P>    - <B>error out</B>: error producido al ejecutarse o el error de entrada si es que habia</P>
+<P><IMG SRC="WrapperController_lvlib_GetQuarantineListc.png" ALT="WrapperController.lvlib:GetQuarantineList.vi"></P>
+<P><IMG SRC="WrapperController_lvlib_GetQuarantineListp.png" ALT="WrapperController.lvlib:GetQuarantineList.vi"></P>
+<P><IMG SRC="WrapperController_lvlib_GetQuarantineListd.png" ALT="WrapperController.lvlib:GetQuarantineList.vi"></P>
+<P><IMG SRC="WrapperController_lvlib_GetQuarantineListd1.png" ALT="WrapperController.lvlib:GetQuarantineList.vi"></P>
+<Table>
+</Table>
+<HR>
+<A NAME="WrapperController.lvlib:GetScrapList.vi"></A><H2>WrapperController.lvlib:GetScrapList.vi</H2>
+<P>Función que consulta la lista de chatarra de un tipo de pieza</P>
+<P></P>
+<P>Controles:</P>
+<P>    - <B>basicInformation in</B>: datos necesarios para hacer la subida.</P>
+<P>    - <B>unitType</B>: WERS</P>
+<P>    - <B>error in (no error)</B>: Entrada de errores</P>
+<P></P>
+<P>Indicadores:</P>
+<P>    - <B>basicInformtion out</B>: salida de los datos basicos actualizados</P>
+<P>    - <B>ArrayDeRespuestas</B>: respuesta obtenida del servidor</P>
+<P>    - <B>error out</B>: error producido al ejecutarse o el error de entrada si es que habia</P>
+<P><IMG SRC="WrapperController_lvlib_GetScrapListc.png" ALT="WrapperController.lvlib:GetScrapList.vi"></P>
+<P><IMG SRC="WrapperController_lvlib_GetScrapListp.png" ALT="WrapperController.lvlib:GetScrapList.vi"></P>
+<P><IMG SRC="WrapperController_lvlib_GetScrapListd.png" ALT="WrapperController.lvlib:GetScrapList.vi"></P>
+<P><IMG SRC="WrapperController_lvlib_GetScrapListd1.png" ALT="WrapperController.lvlib:GetScrapList.vi"></P>
+<Table>
+</Table>
+<HR>
+<A NAME="WrapperController.lvlib:SetQuarantine.vi"></A><H2>WrapperController.lvlib:SetQuarantine.vi</H2>
+<P>Función que reporta el estado de cuarentena de una pieza</P>
+<P></P>
+<P>Controles:</P>
+<P>    - <B>basicInformation in</B>: datos necesarios para hacer la subida.</P>
+<P>    - <B>parametrosCuarentena</B>: cluster con los datos del reporte, incluye array de piezas a reportar</P>
+<P>    - <B>error in (no error)</B>: Entrada de errores</P>
+<P></P>
+<P>Indicadores:</P>
+<P>    - <B>basicInformtion out</B>: salida de los datos basicos actualizados</P>
+<P>    - <B>arrayDeRespuestas</B>: respuesta obtenida del servidor</P>
+<P>    - <B>error out</B>: error producido al ejecutarse o el error de entrada si es que habia</P>
+<P><IMG SRC="WrapperController_lvlib_SetQuarantinec.png" ALT="WrapperController.lvlib:SetQuarantine.vi"></P>
+<P><IMG SRC="WrapperController_lvlib_SetQuarantinep.png" ALT="WrapperController.lvlib:SetQuarantine.vi"></P>
+<P><IMG SRC="WrapperController_lvlib_SetQuarantined.png" ALT="WrapperController.lvlib:SetQuarantine.vi"></P>
+<P><IMG SRC="WrapperController_lvlib_SetQuarantined1.png" ALT="WrapperController.lvlib:SetQuarantine.vi"></P>
+<Table>
+</Table>
+<HR>
+<A NAME="WrapperController.lvlib:FromQuarantineToScrap.vi"></A><H2>WrapperController.lvlib:FromQuarantineToScrap.vi</H2>
+<P>Función que mueve de cuarentena a chatarra una pieza</P>
+<P></P>
+<P>Controles:</P>
+<P>    - <B>basicInformation in</B>: datos necesarios para hacer la subida.</P>
+<P>    - <B>unitIds</B>: arrray de identificadores de piezas</P>
+<P>    - <B>error in (no error)</B>: Entrada de errores</P>
+<P></P>
+<P>Indicadores:</P>
+<P>    - <B>basicInformtion out</B>: salida de los datos basicos actualizados</P>
+<P>    - <B>arrayDeRespuestas</B>: respuesta obtenida del servidor</P>
+<P>    - <B>error out</B>: error producido al ejecutarse o el error de entrada si es que habia</P>
+<P><IMG SRC="WrapperController_lvlib_FromQuarantineToScrapc.png" ALT="WrapperController.lvlib:FromQuarantineToScrap.vi"></P>
+<P><IMG SRC="WrapperController_lvlib_FromQuarantineToScrapp.png" ALT="WrapperController.lvlib:FromQuarantineToScrap.vi"></P>
+<P><IMG SRC="WrapperController_lvlib_FromQuarantineToScrapd.png" ALT="WrapperController.lvlib:FromQuarantineToScrap.vi"></P>
+<P><IMG SRC="WrapperController_lvlib_FromQuarantineToScrapd1.png" ALT="WrapperController.lvlib:FromQuarantineToScrap.vi"></P>
+<Table>
+</Table>
+<HR>
+<A NAME="WrapperController.lvlib:RemoveQuarantine.vi"></A><H2>WrapperController.lvlib:RemoveQuarantine.vi</H2>
+<P>Función que elimina el estado de cuarentena de una pieza</P>
+<P></P>
+<P>Controles:</P>
+<P>    - <B>basicInformation in</B>: datos necesarios para hacer la subida.</P>
+<P>    - <B>unitIDs</B>: arrray de identificadores de piezas</P>
+<P>    - <B>error in (no error)</B>: Entrada de errores</P>
+<P></P>
+<P>Indicadores:</P>
+<P>    - <B>basicInformtion out</B>: salida de los datos basicos actualizados</P>
+<P>    - <B>arrayDeRespuestas</B>: respuesta obtenida del servidor</P>
+<P>    - <B>error out</B>: error producido al ejecutarse o el error de entrada si es que habia</P>
+<P><IMG SRC="WrapperController_lvlib_RemoveQuarantinec.png" ALT="WrapperController.lvlib:RemoveQuarantine.vi"></P>
+<P><IMG SRC="WrapperController_lvlib_RemoveQuarantinep.png" ALT="WrapperController.lvlib:RemoveQuarantine.vi"></P>
+<P><IMG SRC="WrapperController_lvlib_RemoveQuarantined.png" ALT="WrapperController.lvlib:RemoveQuarantine.vi"></P>
+<P><IMG SRC="WrapperController_lvlib_RemoveQuarantined1.png" ALT="WrapperController.lvlib:RemoveQuarantine.vi"></P>
+<Table>
+</Table>
+</BODY>
+</HTML>

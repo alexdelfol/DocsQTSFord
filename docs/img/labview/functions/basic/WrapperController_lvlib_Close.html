@@ -1,0 +1,74 @@
+<HTML>
+<HEAD>
+<TITLE>WrapperController.lvlib:Close.vi</TITLE>
+<META NAME="Author" CONTENT="">
+<META NAME="GENERATOR" CONTENT="G Development Environment">
+</HEAD>
+<BODY BGCOLOR="#FFFFFF">
+<A NAME="WrapperController.lvlib:Close.vi"></A><H2>WrapperController.lvlib:Close.vi</H2>
+<P>Funcion dedicada al cierre de la conexión con el servidor esperando a las respuestas que hayan pendientes.</P>
+<P>Controles: </P>
+<P>    - <B>error in (no error)</B>: Entrada de errores, si hay error la función no hará nada.</P>
+<P>    - <B>basinInformation in</B>: Cluster con los datos basicos para hacer la función.</P>
+<P>Indicadores:</P>
+<P>    - <B>error out</B>: error producido durante la ejecución o el error de entrada.</P>
+<P>    - <B>basicInformation out</B>: Cluster con la información basica (imposible realizar un open)</P>
+<P><IMG SRC="WrapperController_lvlib_Closec.png" ALT="WrapperController.lvlib:Close.vi"></P>
+<P><IMG SRC="WrapperController_lvlib_Closep.png" ALT="WrapperController.lvlib:Close.vi"></P>
+<P><IMG SRC="WrapperController_lvlib_Closed.png" ALT="WrapperController.lvlib:Close.vi"></P>
+<P><IMG SRC="WrapperController_lvlib_Closed1.png" ALT="WrapperController.lvlib:Close.vi"></P>
+<Table>
+</Table>
+<HR>
+<A NAME="WrapperController.lvlib:Open.vi"></A><H2>WrapperController.lvlib:Open.vi</H2>
+<P>Función que abre un canal de comunicación con el servidor</P>
+<P>Controles: </P>
+<P>    - <B>basicInformation in</B>: Cluster con la información necesaria para crear el canal</P>
+<P>    - <B>error in (no error)</B>: Entrada de errores</P>
+<P>Indicadores: </P>
+<P>    - <B>basicInformation out</B>: cluster preparado para realizar peticiones al servidor</P>
+<P>    - <B>error out</B>: error producido durante el uso de la función</P>
+<P><IMG SRC="WrapperController_lvlib_Openc.png" ALT="WrapperController.lvlib:Open.vi"></P>
+<P><IMG SRC="WrapperController_lvlib_Openp.png" ALT="WrapperController.lvlib:Open.vi"></P>
+<P><IMG SRC="WrapperController_lvlib_Opend.png" ALT="WrapperController.lvlib:Open.vi"></P>
+<P><IMG SRC="WrapperController_lvlib_Opend1.png" ALT="WrapperController.lvlib:Open.vi"></P>
+<Table>
+</Table>
+<HR>
+<A NAME="WrapperController.lvlib:ConfigurationWrapper.vi"></A><H2>WrapperController.lvlib:ConfigurationWrapper.vi</H2>
+<P>Función que crea la instancia del subsistema Wrapper, inicializando sus atributos.</P>
+<P>Controles:</P>
+<P>    - <B>config</B>: estructura de datos que inlcuye todo lo necesario para contruir el Wrapper.</P>
+<P>    - <B>error in</B>: entrada de error</P>
+<P>Indicadores:</P>
+<P>    - <B>basicInformation out</B>: cluster construido con lo necesario para hacer peticiones.</P>
+<P>    - <B>error out</B>: Salida de errores</P>
+<P><IMG SRC="WrapperController_lvlib_ConfigurationWrapperc.png" ALT="WrapperController.lvlib:ConfigurationWrapper.vi"></P>
+<P><IMG SRC="WrapperController_lvlib_ConfigurationWrapperp.png" ALT="WrapperController.lvlib:ConfigurationWrapper.vi"></P>
+<P><IMG SRC="WrapperController_lvlib_ConfigurationWrapperd.png" ALT="WrapperController.lvlib:ConfigurationWrapper.vi"></P>
+<P><IMG SRC="WrapperController_lvlib_ConfigurationWrapperd1.png" ALT="WrapperController.lvlib:ConfigurationWrapper.vi"></P>
+<P><IMG SRC="WrapperController_lvlib_ConfigurationWrapperd2.png" ALT="WrapperController.lvlib:ConfigurationWrapper.vi"></P>
+<P><IMG SRC="WrapperController_lvlib_ConfigurationWrapperd3.png" ALT="WrapperController.lvlib:ConfigurationWrapper.vi"></P>
+<Table>
+</Table>
+<HR>
+<A NAME="WrapperController.lvlib:DeleteReference.vi"></A><H2>WrapperController.lvlib:DeleteReference.vi</H2>
+<P>Función que elimina la referencia de un objeto de .NET.</P>
+<P>Controles: </P>
+<P>    - <B>basicInformation in</B>: cluster que incluye el objeto</P>
+<P>    - <B>error in (no error)</B>: entrada de errores</P>
+<P>Indicadores:</P>
+<P>    - <B>error out</B>: Error producido con el borrado de la referencio o producido con anterioridad.</P>
+<P><IMG SRC="WrapperController_lvlib_DeleteReferencec.png" ALT="WrapperController.lvlib:DeleteReference.vi"></P>
+<P><IMG SRC="WrapperController_lvlib_DeleteReferencep.png" ALT="WrapperController.lvlib:DeleteReference.vi"></P>
+<P><IMG SRC="WrapperController_lvlib_DeleteReferenced.png" ALT="WrapperController.lvlib:DeleteReference.vi"></P>
+<Table>
+</Table>
+<HR>
+<A NAME="WrapperController.lvlib:BasicFunctions.vi"></A><H2>WrapperController.lvlib:BasicFunctions.vi</H2>
+<P>Contiene las funciones basicas para la gestion del Wrapper (contructor, open, close, delete)</P>
+<P><IMG SRC="WrapperController_lvlib_BasicFunctionsc.png" ALT="WrapperController.lvlib:BasicFunctions.vi"></P>
+<Table>
+</Table>
+</BODY>
+</HTML>

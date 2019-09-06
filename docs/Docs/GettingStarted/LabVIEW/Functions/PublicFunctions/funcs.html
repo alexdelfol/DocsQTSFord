@@ -1,0 +1,453 @@
+<!doctype html><html lang="en" class="no-js"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="x-ua-compatible" content="ie=edge"><meta name="author" content="Alejandro Delgado Folgado (adelga54)"><meta name="lang:clipboard.copy" content="Copy to clipboard"><meta name="lang:clipboard.copied" content="Copied to clipboard"><meta name="lang:search.language" content="en"><meta name="lang:search.pipeline.stopwords" content="True"><meta name="lang:search.pipeline.trimmer" content="True"><meta name="lang:search.result.none" content="No matching documents"><meta name="lang:search.result.one" content="1 matching document"><meta name="lang:search.result.other" content="# matching documents"><meta name="lang:search.tokenizer" content="[\s\-]+"><link rel="shortcut icon" href="../../../../../img/favicon.ico"><meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.3.1"><title>Principal Functions - Wrapper QTS</title><link rel="stylesheet" href="../../../../../assets/stylesheets/application.4031d38b.css"><link rel="stylesheet" href="../../../../../assets/stylesheets/application-palette.224b79ff.css"><meta name="theme-color" content="#3f51b5"><script src="../../../../../assets/javascripts/modernizr.74668098.js"></script><link href="https://fonts.gstatic.com" rel="preconnect" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono&display=swap"><style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style><link rel="stylesheet" href="../../../../../assets/fonts/material-icons.css"><link rel="stylesheet" href="../../../../../extra.css"></head><body dir="ltr" data-md-color-primary="indigo" data-md-color-accent="indigo"><svg class="md-svg"><defs><svg xmlns="http://www.w3.org/2000/svg" width="500" height="500" viewBox="0 0 500 500" id="__gitlab"><path fill="currentColor" d="M93.667 473.347l90.684-279.097H2.983l90.684 279.097z" transform="translate(156.198 1.16)"/><path fill="currentColor" d="M221.333 473.345L130.649 194.25H3.557l217.776 279.095z" transform="translate(28.531 1.16)" opacity=".7"/><path fill="currentColor" d="M32 195.155L4.441 279.97a18.773 18.773 0 0 0 6.821 20.99l238.514 173.29L32 195.155z" transform="translate(.089 .256)" opacity=".5"/><path fill="currentColor" d="M2.667-84.844h127.092L75.14-252.942c-2.811-8.649-15.047-8.649-17.856 0L2.667-84.844z" transform="translate(29.422 280.256)"/><path fill="currentColor" d="M2.667 473.345L93.351 194.25h127.092L2.667 473.345z" transform="translate(247.198 1.16)" opacity=".7"/><path fill="currentColor" d="M221.334 195.155l27.559 84.815a18.772 18.772 0 0 1-6.821 20.99L3.557 474.25l217.777-279.095z" transform="translate(246.307 .256)" opacity=".5"/><path fill="currentColor" d="M130.667-84.844H3.575l54.618-168.098c2.811-8.649 15.047-8.649 17.856 0l54.618 168.098z" transform="translate(336.974 280.256)"/></svg></defs></svg> <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off"> <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off"> <label class="md-overlay" data-md-component="overlay" for="__drawer"></label><a href="#functions" tabindex="1" class="md-skip">Skip to content </a><header class="md-header" data-md-component="header"><nav class="md-header-nav md-grid"><div class="md-flex"><div class="md-flex__cell md-flex__cell--shrink"><a href="../../../../../index.html" title="Wrapper QTS" class="md-header-nav__button md-logo"><i class="md-icon">code</i></a></div><div class="md-flex__cell md-flex__cell--shrink"><label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label></div><div class="md-flex__cell md-flex__cell--stretch"><div class="md-flex__ellipsis md-header-nav__title" data-md-component="title"><span class="md-header-nav__topic">Wrapper QTS</span><span class="md-header-nav__topic">Principal Functions</span></div></div><div class="md-flex__cell md-flex__cell--shrink"><label class="md-icon md-icon--search md-header-nav__button" for="__search"></label><div class="md-search" data-md-component="search" role="dialog"><label class="md-search__overlay" for="__search"></label><div class="md-search__inner" role="search"><form class="md-search__form" name="search"><input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active"> <label class="md-icon md-search__icon" for="__search"></label> <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">&#xE5CD;</button></form><div class="md-search__output"><div class="md-search__scrollwrap" data-md-scrollfix><div class="md-search-result" data-md-component="result"><div class="md-search-result__meta">Type to start searching</div><ol class="md-search-result__list"></ol></div></div></div></div></div></div><div class="md-flex__cell md-flex__cell--shrink"><div class="md-header-nav__source"><a href="https://gitlab.com/alexdelfol/labviewclientqts/" title="Go to repository" class="md-source" data-md-source="gitlab"><div class="md-source__icon"><svg viewBox="0 0 24 24" width="24" height="24"><use xlink:href="#__gitlab" width="24" height="24"></use></svg></div><div class="md-source__repository">GitLab</div></a></div></div></div></nav></header><div class="md-container"><nav class="md-tabs md-tabs--active" data-md-component="tabs"><div class="md-tabs__inner md-grid"><ul class="md-tabs__list"><li class="md-tabs__item"><a href="../../../../../index.html" title="Home" class="md-tabs__link">Home</a></li><li class="md-tabs__item"><a href="../../../../intro.html" title="Docs" class="md-tabs__link md-tabs__link--active">Docs</a></li><li class="md-tabs__item"><a href="../../../../../About/overview.html" title="About" class="md-tabs__link">About</a></li></ul></div></nav><main class="md-main"><div class="md-main__inner md-grid" data-md-component="container"><div class="md-sidebar md-sidebar--primary" data-md-component="navigation"><div class="md-sidebar__scrollwrap"><div class="md-sidebar__inner"><nav class="md-nav md-nav--primary" data-md-level="0"><label class="md-nav__title md-nav__title--site" for="__drawer"><a href="../../../../../index.html" title="Wrapper QTS" class="md-nav__button md-logo"><i class="md-icon">code</i></a>Wrapper QTS</label><div class="md-nav__source"><a href="https://gitlab.com/alexdelfol/labviewclientqts/" title="Go to repository" class="md-source" data-md-source="gitlab"><div class="md-source__icon"><svg viewBox="0 0 24 24" width="24" height="24"><use xlink:href="#__gitlab" width="24" height="24"></use></svg></div><div class="md-source__repository">GitLab</div></a></div><ul class="md-nav__list" data-md-scrollfix><li class="md-nav__item"><a href="../../../../../index.html" title="Home" class="md-nav__link">Home</a></li><li class="md-nav__item md-nav__item--active md-nav__item--nested"><input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" checked><label class="md-nav__link" for="nav-2">Docs</label><nav class="md-nav" data-md-component="collapsible" data-md-level="1"><label class="md-nav__title" for="nav-2">Docs</label><ul class="md-nav__list" data-md-scrollfix><li class="md-nav__item"><a href="../../../../intro.html" title="Introduction" class="md-nav__link">Introduction</a></li><li class="md-nav__item"><a href="../../../../install.html" title="Installation" class="md-nav__link">Installation</a></li><li class="md-nav__item md-nav__item--active md-nav__item--nested"><input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-3" type="checkbox" id="nav-2-3" checked><label class="md-nav__link" for="nav-2-3">GettingStarted</label><nav class="md-nav" data-md-component="collapsible" data-md-level="2"><label class="md-nav__title" for="nav-2-3">GettingStarted</label><ul class="md-nav__list" data-md-scrollfix><li class="md-nav__item"><a href="../../../overview.html" title="Overview" class="md-nav__link">Overview</a></li><li class="md-nav__item md-nav__item--active md-nav__item--nested"><input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-3-2" type="checkbox" id="nav-2-3-2" checked><label class="md-nav__link" for="nav-2-3-2">WrapperController(LabView)</label><nav class="md-nav" data-md-component="collapsible" data-md-level="3"><label class="md-nav__title" for="nav-2-3-2">WrapperController(LabView)</label><ul class="md-nav__list" data-md-scrollfix><li class="md-nav__item"><a href="../../overview.html" title="Overview" class="md-nav__link">Overview</a></li><li class="md-nav__item md-nav__item--active md-nav__item--nested"><input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-3-2-2" type="checkbox" id="nav-2-3-2-2" checked><label class="md-nav__link" for="nav-2-3-2-2">Built-in Functions</label><nav class="md-nav" data-md-component="collapsible" data-md-level="4"><label class="md-nav__title" for="nav-2-3-2-2">Built-in Functions</label><ul class="md-nav__list" data-md-scrollfix><li class="md-nav__item md-nav__item--active md-nav__item--nested"><input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-3-2-2-1" type="checkbox" id="nav-2-3-2-2-1" checked><label class="md-nav__link" for="nav-2-3-2-2-1">Public Functions</label><nav class="md-nav" data-md-component="collapsible" data-md-level="5"><label class="md-nav__title" for="nav-2-3-2-2-1">Public Functions</label><ul class="md-nav__list" data-md-scrollfix><li class="md-nav__item"><a href="basic.html" title="Basic Functions" class="md-nav__link">Basic Functions</a></li><li class="md-nav__item md-nav__item--active"><input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc"><label class="md-nav__link md-nav__link--active" for="__toc">Principal Functions</label><a href="funcs.html" title="Principal Functions" class="md-nav__link md-nav__link--active">Principal Functions</a><nav class="md-nav md-nav--secondary"><label class="md-nav__title" for="__toc">Table of contents</label><ul class="md-nav__list" data-md-scrollfix><li class="md-nav__item"><a href="#birthhistory-functions" title="BirthHistory Functions" class="md-nav__link">BirthHistory Functions</a><nav class="md-nav"><ul class="md-nav__list"><li class="md-nav__item"><a href="#getbirthhistory" title="GetBirthHistory" class="md-nav__link">GetBirthHistory</a></li><li class="md-nav__item"><a href="#setbirthhistorydata" title="SetBirthHistoryData" class="md-nav__link">SetBirthHistoryData</a></li><li class="md-nav__item"><a href="#uploadbirthhistory" title="UploadBirthHistory" class="md-nav__link">UploadBirthHistory</a></li></ul></nav></li><li class="md-nav__item"><a href="#operationinfo-functions" title="OperationInfo Functions" class="md-nav__link">OperationInfo Functions</a><nav class="md-nav"><ul class="md-nav__list"><li class="md-nav__item"><a href="#getoperationattributes" title="GetOperationAttributes" class="md-nav__link">GetOperationAttributes</a></li><li class="md-nav__item"><a href="#getoperationoptionaldata" title="GetOperationOptionalData" class="md-nav__link">GetOperationOptionalData</a></li><li class="md-nav__item"><a href="#getoperationstatus" title="GetOperationStatus" class="md-nav__link">GetOperationStatus</a></li></ul></nav></li><li class="md-nav__item"><a href="#quarantine-functions" title="Quarantine Functions" class="md-nav__link">Quarantine Functions</a><nav class="md-nav"><ul class="md-nav__list"><li class="md-nav__item"><a href="#checkquarantine" title="CheckQuarantine" class="md-nav__link">CheckQuarantine</a></li><li class="md-nav__item"><a href="#fromquarantinetoscrap" title="FromQuarantineToScrap" class="md-nav__link">FromQuarantineToScrap</a></li><li class="md-nav__item"><a href="#getquarantinelist" title="GetQuarantineList" class="md-nav__link">GetQuarantineList</a></li><li class="md-nav__item"><a href="#getscraplist" title="GetScrapList" class="md-nav__link">GetScrapList</a></li><li class="md-nav__item"><a href="#removequarantine" title="RemoveQuarantine" class="md-nav__link">RemoveQuarantine</a></li><li class="md-nav__item"><a href="#setquarantine" title="SetQuarantine" class="md-nav__link">SetQuarantine</a></li></ul></nav></li><li class="md-nav__item"><a href="#other-functions" title="Other Functions" class="md-nav__link">Other Functions</a><nav class="md-nav"><ul class="md-nav__list"><li class="md-nav__item"><a href="#flexiblemanualinspection" title="FlexibleManualInspection" class="md-nav__link">FlexibleManualInspection</a></li><li class="md-nav__item"><a href="#getallstations" title="GetAllStations" class="md-nav__link">GetAllStations</a></li><li class="md-nav__item"><a href="#getfmihhconfiguration" title="GetFmiHhConfiguration" class="md-nav__link">GetFmiHhConfiguration</a></li><li class="md-nav__item"><a href="#getfmistatuscodesinformation" title="GetFmiStatusCodesInformation" class="md-nav__link">GetFmiStatusCodesInformation</a></li><li class="md-nav__item"><a href="#getprocessdatahistorywithoutrangeofdate" title="GetProcessDataHistoryWithoutRangeOfDate" class="md-nav__link">GetProcessDataHistoryWithoutRangeOfDate</a></li><li class="md-nav__item"><a href="#getprocessdatahistorywithrangeofdate" title="GetProcessDataHistoryWithRangeOfDate" class="md-nav__link">GetProcessDataHistoryWithRangeOfDate</a></li><li class="md-nav__item"><a href="#heartbeat" title="Heartbeat" class="md-nav__link">Heartbeat</a></li><li class="md-nav__item"><a href="#lookupforparent" title="LookUpForParent" class="md-nav__link">LookUpForParent</a></li><li class="md-nav__item"><a href="#partusage" title="PartUsage" class="md-nav__link">PartUsage</a></li><li class="md-nav__item"><a href="#testcurrentsettingdatabaseconnection" title="TestCurrentSettingDatabaseConnection" class="md-nav__link">TestCurrentSettingDatabaseConnection</a></li><li class="md-nav__item"><a href="#testsettingdatabaseconnection" title="TestSettingDatabaseConnection" class="md-nav__link">TestSettingDatabaseConnection</a></li></ul></nav></li></ul></nav></li><li class="md-nav__item"><a href="auxfunc.html" title="Auxiliar Functions" class="md-nav__link">Auxiliar Functions</a></li></ul></nav></li><li class="md-nav__item"><a href="../internal.html" title="Private Functions" class="md-nav__link">Private Functions</a></li></ul></nav></li><li class="md-nav__item md-nav__item--nested"><input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-3-2-3" type="checkbox" id="nav-2-3-2-3"><label class="md-nav__link" for="nav-2-3-2-3">Built-in Clusters</label><nav class="md-nav" data-md-component="collapsible" data-md-level="4"><label class="md-nav__title" for="nav-2-3-2-3">Built-in Clusters</label><ul class="md-nav__list" data-md-scrollfix><li class="md-nav__item"><a href="../../Clusters/basic.html" title="Basic Clusters & Enums" class="md-nav__link">Basic Clusters & Enums</a></li><li class="md-nav__item"><a href="../../Clusters/args.html" title="Arguments" class="md-nav__link">Arguments</a></li><li class="md-nav__item"><a href="../../Clusters/resp.html" title="Responses" class="md-nav__link">Responses</a></li></ul></nav></li></ul></nav></li><li class="md-nav__item md-nav__item--nested"><input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-3-3" type="checkbox" id="nav-2-3-3"><label class="md-nav__link" for="nav-2-3-3">WrapperLibrary(.NET)</label><nav class="md-nav" data-md-component="collapsible" data-md-level="3"><label class="md-nav__title" for="nav-2-3-3">WrapperLibrary(.NET)</label><ul class="md-nav__list" data-md-scrollfix><li class="md-nav__item"><a href="../../../NET/overview.html" title="Overview" class="md-nav__link">Overview</a></li><li class="md-nav__item md-nav__item--nested"><input class="md-toggle md-nav__toggle" data-md-toggle="nav-2-3-3-2" type="checkbox" id="nav-2-3-3-2"><label class="md-nav__link" for="nav-2-3-3-2">Wrapper</label><nav class="md-nav" data-md-component="collapsible" data-md-level="4"><label class="md-nav__title" for="nav-2-3-3-2">Wrapper</label><ul class="md-nav__list" data-md-scrollfix><li class="md-nav__item"><a href="../../../NET/wrapper.html" title="Definition" class="md-nav__link">Definition</a></li><li class="md-nav__item"><a href="../../../NET/funcs.html" title="Functions" class="md-nav__link">Functions</a></li></ul></nav></li><li class="md-nav__item"><a href="../../../NET/object.html" title="Other Objects" class="md-nav__link">Other Objects</a></li></ul></nav></li></ul></nav></li></ul></nav></li><li class="md-nav__item md-nav__item--nested"><input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3"><label class="md-nav__link" for="nav-3">About</label><nav class="md-nav" data-md-component="collapsible" data-md-level="1"><label class="md-nav__title" for="nav-3">About</label><ul class="md-nav__list" data-md-scrollfix><li class="md-nav__item"><a href="../../../../../About/overview.html" title="Overview" class="md-nav__link">Overview</a></li><li class="md-nav__item"><a href="../../../../../About/qts.html" title="QTS" class="md-nav__link">QTS</a></li><li class="md-nav__item"><a href="../../../../../About/soap.html" title="SOAP" class="md-nav__link">SOAP</a></li></ul></nav></li></ul></nav></div></div></div><div class="md-sidebar md-sidebar--secondary" data-md-component="toc"><div class="md-sidebar__scrollwrap"><div class="md-sidebar__inner"><nav class="md-nav md-nav--secondary"><label class="md-nav__title" for="__toc">Table of contents</label><ul class="md-nav__list" data-md-scrollfix><li class="md-nav__item"><a href="#birthhistory-functions" title="BirthHistory Functions" class="md-nav__link">BirthHistory Functions</a><nav class="md-nav"><ul class="md-nav__list"><li class="md-nav__item"><a href="#getbirthhistory" title="GetBirthHistory" class="md-nav__link">GetBirthHistory</a></li><li class="md-nav__item"><a href="#setbirthhistorydata" title="SetBirthHistoryData" class="md-nav__link">SetBirthHistoryData</a></li><li class="md-nav__item"><a href="#uploadbirthhistory" title="UploadBirthHistory" class="md-nav__link">UploadBirthHistory</a></li></ul></nav></li><li class="md-nav__item"><a href="#operationinfo-functions" title="OperationInfo Functions" class="md-nav__link">OperationInfo Functions</a><nav class="md-nav"><ul class="md-nav__list"><li class="md-nav__item"><a href="#getoperationattributes" title="GetOperationAttributes" class="md-nav__link">GetOperationAttributes</a></li><li class="md-nav__item"><a href="#getoperationoptionaldata" title="GetOperationOptionalData" class="md-nav__link">GetOperationOptionalData</a></li><li class="md-nav__item"><a href="#getoperationstatus" title="GetOperationStatus" class="md-nav__link">GetOperationStatus</a></li></ul></nav></li><li class="md-nav__item"><a href="#quarantine-functions" title="Quarantine Functions" class="md-nav__link">Quarantine Functions</a><nav class="md-nav"><ul class="md-nav__list"><li class="md-nav__item"><a href="#checkquarantine" title="CheckQuarantine" class="md-nav__link">CheckQuarantine</a></li><li class="md-nav__item"><a href="#fromquarantinetoscrap" title="FromQuarantineToScrap" class="md-nav__link">FromQuarantineToScrap</a></li><li class="md-nav__item"><a href="#getquarantinelist" title="GetQuarantineList" class="md-nav__link">GetQuarantineList</a></li><li class="md-nav__item"><a href="#getscraplist" title="GetScrapList" class="md-nav__link">GetScrapList</a></li><li class="md-nav__item"><a href="#removequarantine" title="RemoveQuarantine" class="md-nav__link">RemoveQuarantine</a></li><li class="md-nav__item"><a href="#setquarantine" title="SetQuarantine" class="md-nav__link">SetQuarantine</a></li></ul></nav></li><li class="md-nav__item"><a href="#other-functions" title="Other Functions" class="md-nav__link">Other Functions</a><nav class="md-nav"><ul class="md-nav__list"><li class="md-nav__item"><a href="#flexiblemanualinspection" title="FlexibleManualInspection" class="md-nav__link">FlexibleManualInspection</a></li><li class="md-nav__item"><a href="#getallstations" title="GetAllStations" class="md-nav__link">GetAllStations</a></li><li class="md-nav__item"><a href="#getfmihhconfiguration" title="GetFmiHhConfiguration" class="md-nav__link">GetFmiHhConfiguration</a></li><li class="md-nav__item"><a href="#getfmistatuscodesinformation" title="GetFmiStatusCodesInformation" class="md-nav__link">GetFmiStatusCodesInformation</a></li><li class="md-nav__item"><a href="#getprocessdatahistorywithoutrangeofdate" title="GetProcessDataHistoryWithoutRangeOfDate" class="md-nav__link">GetProcessDataHistoryWithoutRangeOfDate</a></li><li class="md-nav__item"><a href="#getprocessdatahistorywithrangeofdate" title="GetProcessDataHistoryWithRangeOfDate" class="md-nav__link">GetProcessDataHistoryWithRangeOfDate</a></li><li class="md-nav__item"><a href="#heartbeat" title="Heartbeat" class="md-nav__link">Heartbeat</a></li><li class="md-nav__item"><a href="#lookupforparent" title="LookUpForParent" class="md-nav__link">LookUpForParent</a></li><li class="md-nav__item"><a href="#partusage" title="PartUsage" class="md-nav__link">PartUsage</a></li><li class="md-nav__item"><a href="#testcurrentsettingdatabaseconnection" title="TestCurrentSettingDatabaseConnection" class="md-nav__link">TestCurrentSettingDatabaseConnection</a></li><li class="md-nav__item"><a href="#testsettingdatabaseconnection" title="TestSettingDatabaseConnection" class="md-nav__link">TestSettingDatabaseConnection</a></li></ul></nav></li></ul></nav></div></div></div><div class="md-content"><article class="md-content__inner md-typeset"><a href="https://gitlab.com/alexdelfol/labviewclientqts/blob/master/docs-mkdocs/docs/Docs/GettingStarted/LabVIEW/Functions/PublicFunctions/funcs.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a><h1 id="functions">Functions</h1>
+<p>Aquí podemos encontrar todas aquellas funciones para hacer uso del servicio de QTS: BirthHstory, Quarantine, FMI...</p>
+<h2 id="birthhistory-functions">BirthHistory Functions</h2>
+<p><img src="../../../../../img\labview\functions\birth\WrapperController_lvlib_BirthHistoryc.png" alt="BirthHistory Polymorphic Icon" width="50" height="50" vspace="0" class="center"></p>
+<h3 id="getbirthhistory">GetBirthHistory</h3>
+<p><img src="../../../../../img\labview\functions\birth\WrapperController_lvlib_GetBirthHistoryc.png" alt="GetBirthHistory Icon" hspace="0" class="center"></p>
+<p>Esta función obtiene el BirthHistory de una pieza, obteniendo así la fecha del paso de dicha pieza por una maquina especifica.</p>
+<p><strong><em>Controls</em></strong></p>
+<ul>
+<li><img alt="cluster icon" src="../../../../../img/labview/cluster.png" />  <a href="../../Clusters/basic.html#basicinformation"><strong>basicInformation in</strong></a> (<em>cluster</em>): estructura de datos que contiene la información basica para poder hacer las llamadas a las funciones.</li>
+<li>
+<p><img alt="cluster icon" src="../../../../../img/labview/cluster.png" />  <a href="../../Clusters/args.html#birthhistory"><strong>parametrosGetBirthHistory</strong></a> (<em>cluster</em>): contiene los datos necesarios relacionados con la pieza a consultar.</p>
+<div class="admonition warning">
+<p class="admonition-title">Cluster variables required</p>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <img alt="datetime Icon" src="../../../../../img/labview/datetime.png" /> <strong>dataDTS</strong></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <img alt="string Icon" src="../../../../../img/labview/string.png" /> <strong>palletID</strong></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <img alt="enum Icon" src="../../../../../img/labview/enum.png" />  <strong>partTypeCode</strong></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <img alt="boolean Icon" src="../../../../../img/labview/boolean.png" /> <strong>partTypeCodeSpecified</strong></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <img alt="string Icon" src="../../../../../img/labview/string.png" /> <strong>PartData</strong></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <img alt="enum Icon" src="../../../../../img/labview/enum.png" />  <strong>UniClassification</strong></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <img alt="enum Icon" src="../../../../../img/labview/enum.png" />  <strong>Result</strong></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> <img alt="cluster Icon" src="../../../../../img/labview/cluster.png" /> <strong>UnitInfo</strong></li>
+</ul>
+</div>
+</li>
+<li>
+<p><img alt="error icon" src="../../../../../img/labview/error.png" /> <strong>error in</strong> (<em>error_cluster</em>).</p>
+</li>
+</ul>
+<p><strong><em>Indicators</em></strong></p>
+<ul>
+<li><img alt="clusterOut icon" src="../../../../../img/labview/clusterOut.png" />  <a href="../../Clusters/basic.html#basicinformation"><strong>basicInformation out</strong></a> (<em>cluster</em>): estructura de datos que contiene la información basica para poder hacer las llamadas a las funciones.</li>
+<li><img alt="arrayClusterOut icon" src="../../../../../img/labview/arrayClusterOut.png" />  <a href="../../Clusters/resp.html#birthhistory"><strong>ArraydeRespuestas out</strong></a> (<em>array</em>): información devuelta por el servidor al hacer la consulta.</li>
+<li><img alt="errorOut icon" src="../../../../../img/labview/errorOut.png" /> <strong>error out</strong> (<em>error_cluster</em>).</li>
+</ul>
+<h3 id="setbirthhistorydata">SetBirthHistoryData</h3>
+<p><img src="../../../../../img\labview\functions\birth\WrapperController_lvlib_SetBirthHistoryDatac.png" alt="SetBirthHistory Icon" hspace="0" class="center"></p>
+<p>Esta función modifica el atributo PartData  de un BirthHistory dada una pieza y una estación.</p>
+<p><strong><em>Controls</em></strong></p>
+<ul>
+<li><img alt="cluster icon" src="../../../../../img/labview/cluster.png" />  <a href="../../Clusters/basic.html#basicinformation"><strong>basicInformation in</strong></a> (<em>cluster</em>): estructura de datos que contiene la información basica para poder hacer las llamadas a las funciones.</li>
+<li>
+<p><img alt="cluster icon" src="../../../../../img/labview/cluster.png" />  <a href="../../Clusters/args.html#birthhistory"><strong>parametrosSetBirthHistory</strong></a> (<em>cluster</em>): contiene los datos necesarios relacionados con la pieza a consultar.</p>
+<div class="admonition warning">
+<p class="admonition-title">Cluster variables required</p>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> <img alt="datetime Icon" src="../../../../../img/labview/datetime.png" /> <strong>dataDTS</strong></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <img alt="string Icon" src="../../../../../img/labview/string.png" /> <strong>palletID</strong></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <img alt="enum Icon" src="../../../../../img/labview/enum.png" />  <strong>partTypeCode</strong></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <img alt="boolean Icon" src="../../../../../img/labview/boolean.png" /> <strong>partTypeCodeSpecified</strong></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> <img alt="string Icon" src="../../../../../img/labview/string.png" /> <strong>PartData</strong></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <img alt="enum Icon" src="../../../../../img/labview/enum.png" />  <strong>UniClassification</strong></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <img alt="enum Icon" src="../../../../../img/labview/enum.png" />  <strong>Result</strong></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> <img alt="cluster Icon" src="../../../../../img/labview/cluster.png" /> <strong>UnitInfo</strong></li>
+</ul>
+</div>
+</li>
+<li>
+<p><img alt="cluster icon" src="../../../../../img/labview/cluster.png" />  <a href="../../Clusters/basic.html#atributos"><strong>datos</strong></a> (<em>cluster</em>): contiene la información relativa a los atributos de esa pieza.</p>
+</li>
+<li><img alt="error icon" src="../../../../../img/labview/error.png" /> <strong>error in</strong> (<em>error_cluster</em>).</li>
+</ul>
+<p><strong><em>Indicators</em></strong></p>
+<ul>
+<li><img alt="clusterOut icon" src="../../../../../img/labview/clusterOut.png" />  <a href="../../Clusters/basic.html#basicinformation"><strong>basicInformation out</strong></a> (<em>cluster</em>): estructura de datos que contiene la información basica para poder hacer las llamadas a las funciones.</li>
+<li><img alt="arrayClusterOut icon" src="../../../../../img/labview/arrayClusterOut.png" />  <a href="../../Clusters/resp.html#birthhistory"><strong>ArraydeRespuestas</strong></a> (<em>array</em>): información devuelta por el servidor al hacer la consulta.</li>
+<li><img alt="errorOut icon" src="../../../../../img/labview/errorOut.png" /> <strong>error out</strong> (<em>error_cluster</em>).</li>
+</ul>
+<h3 id="uploadbirthhistory">UploadBirthHistory</h3>
+<p><img src="../../../../../img\labview\functions\birth\WrapperController_lvlib_UploadBirthHistoryc.png" alt="UploadBirthHistory Icon" hspace="0" class="center"></p>
+<p>Esta función es utilizada para reportar via QTS el paso de una pieza por una máquina. Es así una de las principales funciones de la librería.</p>
+<p><strong><em>Controls</em></strong></p>
+<ul>
+<li><img alt="cluster icon" src="../../../../../img/labview/cluster.png" />  <a href="../../Clusters/basic.html#basicinformation"><strong>basicInformation in</strong></a> (<em>cluster</em>): estructura de datos que contiene la información basica para poder hacer las llamadas a las funciones.</li>
+<li>
+<p><img alt="cluster icon" src="../../../../../img/labview/cluster.png" />  <a href="../../Clusters/args.html#birthhistory"><strong>parametrosUploadBirthHistory</strong></a> (<em>cluster</em>): contiene los datos necesarios relacionados con la pieza a consultar.</p>
+<div class="admonition warning">
+<p class="admonition-title">Cluster variables required</p>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> <img alt="datetime Icon" src="../../../../../img/labview/datetime.png" /> <strong>dataDTS</strong></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> <img alt="string Icon" src="../../../../../img/labview/string.png" /> <strong>palletID</strong> (<em>optional</em>)</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> <img alt="enum Icon" src="../../../../../img/labview/enum.png" />  <strong>partTypeCode</strong> (<em>optional</em>)</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> <img alt="boolean Icon" src="../../../../../img/labview/boolean.png" /> <strong>partTypeCodeSpecified</strong></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> <img alt="string Icon" src="../../../../../img/labview/string.png" /> <strong>PartData</strong> (<em>optional</em>)</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> <img alt="enum Icon" src="../../../../../img/labview/enum.png" />  <strong>UniClassification</strong></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> <img alt="enum Icon" src="../../../../../img/labview/enum.png" />  <strong>Result</strong></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> <img alt="cluster Icon" src="../../../../../img/labview/cluster.png" /> <strong>UnitInfo</strong></li>
+</ul>
+</div>
+</li>
+<li>
+<p><img alt="arrayCluster icon" src="../../../../../img/labview/arrayCluster.png" />  <a href="../../Clusters/basic.html#atributos"><strong>datos</strong></a> (<em>array</em>): contiene la información relativa a los atributos de esa pieza.</p>
+</li>
+<li><img alt="error icon" src="../../../../../img/labview/error.png" /> <strong>error in</strong> (<em>error_cluster</em>).</li>
+</ul>
+<p><strong><em>Indicators</em></strong></p>
+<ul>
+<li><img alt="clusterOut icon" src="../../../../../img/labview/clusterOut.png" />  <a href="../../Clusters/basic.html#basicinformation"><strong>basicInformation out</strong></a> (<em>cluster</em>): estructura de datos que contiene la información basica para poder hacer las llamadas a las funciones.</li>
+<li><img alt="arrayClusterOut icon" src="../../../../../img/labview/arrayClusterOut.png" />  <a href="../../Clusters/resp.html#birthhistory"><strong>ArraydeRespuestas</strong></a> (<em>array</em>): información devuelta por el servidor al hacer la consulta.</li>
+<li><img alt="errorOut icon" src="../../../../../img/labview/errorOut.png" /> <strong>error out</strong> (<em>error_cluster</em>).</li>
+</ul>
+<hr />
+<h2 id="operationinfo-functions">OperationInfo Functions</h2>
+<p><img src="../../../../../img\labview\functions\operationinfo\WrapperController_lvlib_GetOperationINFOc.png" alt="OperationInfo Polymorphic Icon" width="50" height="50" vspace="0" class="center"></p>
+<h3 id="getoperationattributes">GetOperationAttributes</h3>
+<p><img src="../../../../../img\labview\functions\operationinfo\WrapperController_lvlib_GetOperationAtributesc.png" alt="UploadBirthHistory Icon" hspace="0" class="center"></p>
+<p>Esta función es utilizada para consultar via QTS el paso de una pieza por una máquina. Pudiendo obtener toda la información relativa, incluidos los atributos.</p>
+<p><strong><em>Controls</em></strong></p>
+<ul>
+<li><img alt="cluster icon" src="../../../../../img/labview/cluster.png" />  <a href="../../Clusters/basic.html#basicinformation"><strong>basicInformation in</strong></a> (<em>cluster</em>): estructura de datos que contiene la información basica para poder hacer las llamadas a las funciones.</li>
+<li><img alt="cluster icon" src="../../../../../img/labview/cluster.png" />  <a href="../../Clusters/args.html#getoperationinfo"><strong>argumentosGetCurrentOperationStatus</strong></a> (<em>cluster</em>): contiene los datos necesarios para hacer la consulta.</li>
+<li><img alt="arrayInt icon" src="../../../../../img/labview/arrayInt.png" />  <a href="../../Clusters/basic.html#atributos"><strong>atributos</strong></a> (<em>array</em>): identificadores de los atributos que queremos consultar.</li>
+<li><img alt="error icon" src="../../../../../img/labview/error.png" /> <strong>error in (no error)</strong> (<em>error_cluster</em>).</li>
+</ul>
+<p><strong><em>Indicators</em></strong></p>
+<ul>
+<li><img alt="clusterOut icon" src="../../../../../img/labview/clusterOut.png" />  <a href="../../Clusters/basic.html#basicinformation"><strong>basicInformation out</strong></a> (<em>cluster</em>): estructura de datos que contiene la información basica para poder hacer las llamadas a las funciones.</li>
+<li><img alt="arrayClusterOut icon" src="../../../../../img/labview/arrayClusterOut.png" />  <a href="../../Clusters/resp.html#getoperationinfo"><strong>ArrayDeRespuestasGetCurrentOperationStatus</strong></a> (<em>array</em>): información devuelta por el servidor al hacer la consulta.</li>
+<li><img alt="errorOut icon" src="../../../../../img/labview/errorOut.png" /> <strong>error out</strong> (<em>error_cluster</em>).</li>
+</ul>
+<h3 id="getoperationoptionaldata">GetOperationOptionalData</h3>
+<p><img src="../../../../../img\labview\functions\operationinfo\WrapperController_lvlib_GetOperationOptionalDatac.png" alt="UploadBirthHistory Icon" hspace="0" class="center"></p>
+<p>Esta función es utilizada para consultar via QTS el paso de una pieza por una máquina. Obteniendo unicamente el optional data.</p>
+<p><strong><em>Controls</em></strong></p>
+<ul>
+<li><img alt="cluster icon" src="../../../../../img/labview/cluster.png" />  <a href="../../Clusters/basic.html#basicinformation"><strong>basicInformation in</strong></a> (<em>cluster</em>): estructura de datos que contiene la información basica para poder hacer las llamadas a las funciones.</li>
+<li><img alt="cluster icon" src="../../../../../img/labview/cluster.png" />  <a href="../../Clusters/args.html#getoperationinfo"><strong>argumentosGetCurrentOperationStatus</strong></a> (<em>cluster</em>): contiene los datos necesarios para hacer la consulta.</li>
+<li><img alt="error icon" src="../../../../../img/labview/error.png" /> <strong>error in (no error)</strong> (<em>error_cluster</em>).</li>
+</ul>
+<p><strong><em>Indicators</em></strong></p>
+<ul>
+<li><img alt="clusterOut icon" src="../../../../../img/labview/clusterOut.png" />  <a href="../../Clusters/basic.html#basicinformation"><strong>basicInformation out</strong></a> (<em>cluster</em>): estructura de datos que contiene la información basica para poder hacer las llamadas a las funciones.</li>
+<li><img alt="arrayClusterOut icon" src="../../../../../img/labview/arrayClusterOut.png" />  <a href="../../Clusters/resp.html#getoperationinfo"><strong>ArrayDeRespuestasGetCurrentOperationStatus</strong></a> (<em>array</em>): información devuelta por el servidor al hacer la consulta.</li>
+<li><img alt="errorOut icon" src="../../../../../img/labview/errorOut.png" /> <strong>error out</strong> (<em>error_cluster</em>).</li>
+</ul>
+<h3 id="getoperationstatus">GetOperationStatus</h3>
+<p><img src="../../../../../img\labview\functions\operationinfo\WrapperController_lvlib_GetOperationStatusc.png" alt="UploadBirthHistory Icon" hspace="0" class="center"></p>
+<p>Esta función es utilizada para consultar via QTS el paso de una pieza por una máquina. Obteniendo la información relativa al reporte excepto los atributos.</p>
+<p><strong><em>Controls</em></strong></p>
+<ul>
+<li><img alt="cluster icon" src="../../../../../img/labview/cluster.png" />  <a href="../../Clusters/basic.html#basicinformation"><strong>basicInformation in</strong></a> (<em>cluster</em>): estructura de datos que contiene la información basica para poder hacer las llamadas a las funciones.</li>
+<li><img alt="cluster icon" src="../../../../../img/labview/cluster.png" />  <a href="../../Clusters/args.html#getoperationinfo"><strong>argumentosGetCurrentOperationStatus</strong></a> (<em>cluster</em>): contiene los datos necesarios para hacer la consulta.</li>
+<li><img alt="error icon" src="../../../../../img/labview/error.png" /> <strong>error in (no error)</strong> (<em>error_cluster</em>).</li>
+</ul>
+<p><strong><em>Indicators</em></strong></p>
+<ul>
+<li><img alt="clusterOut icon" src="../../../../../img/labview/clusterOut.png" />  <a href="../../Clusters/basic.html#basicinformation"><strong>basicInformation out</strong></a> (<em>cluster</em>): estructura de datos que contiene la información basica para poder hacer las llamadas a las funciones.</li>
+<li><img alt="arrayClusterOut icon" src="../../../../../img/labview/arrayClusterOut.png" />  <a href="../../Clusters/resp.html#getoperationinfo"><strong>ArrayDeRespuestasGetCurrentOperationStatus</strong></a> (<em>array</em>): información devuelta por el servidor al hacer la consulta.</li>
+<li><img alt="errorOut icon" src="../../../../../img/labview/errorOut.png" /> <strong>error out</strong> (<em>error_cluster</em>).</li>
+</ul>
+<hr />
+<h2 id="quarantine-functions">Quarantine Functions</h2>
+<p><img src="../../../../../img\labview\functions\quarantine\WrapperController_lvlib_Quarantinec.png" alt="Quarantine Polymorphic Icon" width="50" height="50" vspace="0" class="center"></p>
+<h3 id="checkquarantine">CheckQuarantine</h3>
+<p><img src="../../../../../img\labview\functions\quarantine\WrapperController_lvlib_CheckQuaratinec.png" alt="CheckQuarantine Icon" hspace="0" class="center"></p>
+<p>Mediante esta función podemos consultar o chequear el estado de la pieza.</p>
+<p><strong><em>Controls</em></strong></p>
+<ul>
+<li><img alt="cluster icon" src="../../../../../img/labview/cluster.png" />  <a href="../../Clusters/basic.html#basicinformation"><strong>basicInformation in</strong></a> (<em>cluster</em>): estructura de datos que contiene la información basica para poder hacer las llamadas a las funciones.</li>
+<li><img alt="arrayCluster icon" src="../../../../../img/labview/arrayCluster.png" />  <a href="../../Clusters/basic.html#unitinfo"><strong>UnitInfo</strong></a> (<em>array</em>): contiene los datos que identifican a la pieza.</li>
+<li><img alt="error icon" src="../../../../../img/labview/error.png" /> <strong>error in (no error)</strong> (<em>error_cluster</em>).</li>
+</ul>
+<p><strong><em>Indicators</em></strong></p>
+<ul>
+<li><img alt="clusterOut icon" src="../../../../../img/labview/clusterOut.png" />  <a href="../../Clusters/basic.html#basicinformation"><strong>basicInformation out</strong></a> (<em>cluster</em>): estructura de datos que contiene la información basica para poder hacer las llamadas a las funciones.</li>
+<li><img alt="arrayClusterOut icon" src="../../../../../img/labview/arrayClusterOut.png" />  <a href="../../Clusters/resp.html#quarantine"><strong>arrayDeRespuestas</strong></a> (<em>array</em>): información devuelta por el servidor al hacer la consulta.</li>
+<li><img alt="errorOut icon" src="../../../../../img/labview/errorOut.png" /> <strong>error out</strong> (<em>error_cluster</em>).</li>
+</ul>
+<h3 id="fromquarantinetoscrap">FromQuarantineToScrap</h3>
+<p><img src="../../../../../img\labview\functions\quarantine\WrapperController_lvlib_FromQuarantineToScrapc.png" alt="FromQuarantineToScrap Icon" hspace="0" class="center"></p>
+<p>Mediante esta función podemos pasar una pieza en cuarentena al estado de <em>scrap</em> o chatarra.</p>
+<p><strong><em>Controls</em></strong></p>
+<ul>
+<li><img alt="cluster icon" src="../../../../../img/labview/cluster.png" />  <a href="../../Clusters/basic.html#basicinformation"><strong>basicInformation in</strong></a> (<em>cluster</em>): estructura de datos que contiene la información basica para poder hacer las llamadas a las funciones.</li>
+<li><img alt="arrayCluster icon" src="../../../../../img/labview/arrayCluster.png" />  <a href="../../Clusters/basic.html#unitinfo"><strong>UnitInfo</strong></a> (<em>array</em>): contiene los datos que identifican a la pieza.</li>
+<li><img alt="error icon" src="../../../../../img/labview/error.png" /> <strong>error in (no error)</strong> (<em>error_cluster</em>).</li>
+</ul>
+<p><strong><em>Indicators</em></strong></p>
+<ul>
+<li><img alt="clusterOut icon" src="../../../../../img/labview/clusterOut.png" />  <a href="../../Clusters/basic.html#basicinformation"><strong>basicInformation out</strong></a> (<em>cluster</em>): estructura de datos que contiene la información basica para poder hacer las llamadas a las funciones.</li>
+<li><img alt="arrayClusterOut icon" src="../../../../../img/labview/arrayClusterOut.png" />  <a href="../../Clusters/resp.html#quarantine"><strong>arrayDeRespuestas</strong></a> (<em>array</em>): información devuelta por el servidor al hacer la consulta.</li>
+<li><img alt="errorOut icon" src="../../../../../img/labview/errorOut.png" /> <strong>error out</strong> (<em>error_cluster</em>).</li>
+</ul>
+<h3 id="getquarantinelist">GetQuarantineList</h3>
+<p><img src="../../../../../img\labview\functions\quarantine\WrapperController_lvlib_GetQuarantineListc.png" alt="GetQuarantineList Icon" hspace="0" class="center"></p>
+<p>Mediante esta función podemos obtener  las cuarentenas de un modelo.</p>
+<p><strong><em>Controls</em></strong></p>
+<ul>
+<li><img alt="cluster icon" src="../../../../../img/labview/cluster.png" />  <a href="../../Clusters/basic.html#basicinformation"><strong>basicInformation in</strong></a> (<em>cluster</em>): estructura de datos que contiene la información basica para poder hacer las llamadas a las funciones.</li>
+<li><img alt="string icon" src="../../../../../img/labview/string.png" /> <strong>unitType/WERS</strong> (<em>string</em>): identificación de modelo.</li>
+<li><img alt="error icon" src="../../../../../img/labview/error.png" /> <strong>error in (no error)</strong> (<em>error_cluster</em>).</li>
+</ul>
+<p><strong><em>Indicators</em></strong></p>
+<ul>
+<li><img alt="clusterOut icon" src="../../../../../img/labview/clusterOut.png" />  <a href="../../Clusters/basic.html#basicinformation"><strong>basicInformation out</strong></a> (<em>cluster</em>): estructura de datos que contiene la información basica para poder hacer las llamadas a las funciones.</li>
+<li><img alt="arrayClusterOut icon" src="../../../../../img/labview/arrayClusterOut.png" />  <a href="../../Clusters/resp.html#quarantine"><strong>arrayDeRespuestas</strong></a> (<em>array</em>): información devuelta por el servidor al hacer la consulta.</li>
+<li><img alt="errorOut icon" src="../../../../../img/labview/errorOut.png" /> <strong>error out</strong> (<em>error_cluster</em>).</li>
+</ul>
+<h3 id="getscraplist">GetScrapList</h3>
+<p><img src="../../../../../img\labview\functions\quarantine\WrapperController_lvlib_GetScrapListc.png" alt="GetScrapList Icon" hspace="0" class="center"></p>
+<p>Esta función obtiene todas las piezas catalogadas como chatarra dado un modelo.</p>
+<p><strong><em>Controls</em></strong></p>
+<ul>
+<li><img alt="cluster icon" src="../../../../../img/labview/cluster.png" />  <a href="../../Clusters/basic.html#basicinformation"><strong>basicInformation in</strong></a> (<em>cluster</em>): estructura de datos que contiene la información basica para poder hacer las llamadas a las funciones.</li>
+<li><img alt="string icon" src="../../../../../img/labview/string.png" /> <strong>unitType/WERS</strong> (<em>string</em>): identificador del modelo.</li>
+<li><img alt="error icon" src="../../../../../img/labview/error.png" /> <strong>error in (no error)</strong> (<em>error_cluster</em>).</li>
+</ul>
+<p><strong><em>Indicators</em></strong></p>
+<ul>
+<li><img alt="clusterOut icon" src="../../../../../img/labview/clusterOut.png" />  <a href="../../Clusters/basic.html#basicinformation"><strong>basicInformation out</strong></a> (<em>cluster</em>): estructura de datos que contiene la información basica para poder hacer las llamadas a las funciones.</li>
+<li><img alt="arrayClusterOut icon" src="../../../../../img/labview/arrayClusterOut.png" />  <a href="../../Clusters/resp.html#quarantine"><strong>arrayDeRespuestas</strong></a> (<em>array</em>): información devuelta por el servidor al hacer la consulta.</li>
+<li><img alt="errorOut icon" src="../../../../../img/labview/errorOut.png" /> <strong>error out</strong> (<em>error_cluster</em>).</li>
+</ul>
+<h3 id="removequarantine">RemoveQuarantine</h3>
+<p><img src="../../../../../img\labview\functions\quarantine\WrapperController_lvlib_RemoveQuarantinec.png" alt="RemoveQuarantine Icon" hspace="0" class="center"></p>
+<p>Esta función elimina la cuarentena de un conjunto de piezas dadas.</p>
+<p><strong><em>Controls</em></strong></p>
+<ul>
+<li><img alt="cluster icon" src="../../../../../img/labview/cluster.png" />  <a href="../../Clusters/basic.html#basicinformation"><strong>basicInformation in</strong></a> (<em>cluster</em>): estructura de datos que contiene la información basica para poder hacer las llamadas a las funciones.</li>
+<li><img alt="arrayCluster icon" src="../../../../../img/labview/arrayCluster.png" />  <a href="../../Clusters/basic.html#unitinfo"><strong>UnitInfo</strong></a> (<em>array</em>): contiene los datos que identifican a la pieza.</li>
+<li><img alt="error icon" src="../../../../../img/labview/error.png" /> <strong>error in (no error)</strong> (<em>error_cluster</em>).</li>
+</ul>
+<p><strong><em>Indicators</em></strong></p>
+<ul>
+<li><img alt="clusterOut icon" src="../../../../../img/labview/clusterOut.png" />  <a href="../../Clusters/basic.html#basicinformation"><strong>basicInformation out</strong></a> (<em>cluster</em>): estructura de datos que contiene la información basica para poder hacer las llamadas a las funciones.</li>
+<li><img alt="arrayClusterOut icon" src="../../../../../img/labview/arrayClusterOut.png" />  <a href="../../Clusters/resp.html#quarantine"><strong>arrayDeRespuestas</strong></a> (<em>array</em>): información devuelta por el servidor al hacer la consulta.</li>
+<li><img alt="errorOut icon" src="../../../../../img/labview/errorOut.png" /> <strong>error out</strong> (<em>error_cluster</em>).</li>
+</ul>
+<h3 id="setquarantine">SetQuarantine</h3>
+<p><img src="../../../../../img\labview\functions\quarantine\WrapperController_lvlib_SetQuarantinec.png" alt="setQuarantine Icon" hspace="0" class="center"></p>
+<p>Mediante esta función podemos establer un estado de cuarentena (<em>Quarantine</em> o <em>Scrap</em>) a una pieza.</p>
+<p><strong><em>Controls</em></strong></p>
+<ul>
+<li><img alt="cluster icon" src="../../../../../img/labview/cluster.png" />  <a href="../../Clusters/basic.html#basicinformation"><strong>basicInformation in</strong></a> (<em>cluster</em>): estructura de datos que contiene la información basica para poder hacer las llamadas a las funciones.</li>
+<li><img alt="cluster icon" src="../../../../../img/labview/cluster.png" />  <a href="../../Clusters/args.html#quarantine"><strong>parametrosCuarentena</strong></a> (<em>array</em>): contiene todos los datos necesarios para hacer la llamada (id, estado, descripción...).</li>
+<li><img alt="error icon" src="../../../../../img/labview/error.png" /> <strong>error in (no error)</strong> (<em>error_cluster</em>).</li>
+</ul>
+<p><strong><em>Indicators</em></strong></p>
+<ul>
+<li><img alt="clusterOut icon" src="../../../../../img/labview/clusterOut.png" />  <a href="../../Clusters/basic.html#basicinformation"><strong>basicInformation out</strong></a> (<em>cluster</em>): estructura de datos que contiene la información basica para poder hacer las llamadas a las funciones.</li>
+<li><img alt="arrayClusterOut icon" src="../../../../../img/labview/arrayClusterOut.png" />  <a href="../../Clusters/resp.html#quarantine"><strong>arrayDeRespuestas</strong></a> (<em>array</em>): información devuelta por el servidor al hacer la consulta.</li>
+<li><img alt="errorOut icon" src="../../../../../img/labview/errorOut.png" /> <strong>error out</strong> (<em>error_cluster</em>).</li>
+</ul>
+<hr />
+<h2 id="other-functions">Other Functions</h2>
+<p><img src="../../../../../img\labview\functions\other\WrapperController_lvlib_Functionsc.png" alt="OtherFunctions Polymorphic Icon" width="50" height="50" vspace="0" class="center"></p>
+<h3 id="flexiblemanualinspection">FlexibleManualInspection</h3>
+<p><img src="../../../../../img\labview\functions\other\WrapperController_lvlib_FlexibleManualInspectionc.png" alt="Flexible Manual Inspection Icon" hspace="0" class="center"></p>
+<p>FLEXIBLE MANUAL INSPECTION.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>sigue en desarrollo</p>
+</div>
+<p><strong><em>Controls</em></strong></p>
+<ul>
+<li><img alt="cluster icon" src="../../../../../img/labview/cluster.png" />  <a href="../../Clusters/basic.html#basicinformation"><strong>basicInformation in</strong></a> (<em>cluster</em>): estructura de datos que contiene la información basica para poder hacer las llamadas a las funciones.</li>
+<li><img alt="error icon" src="../../../../../img/labview/error.png" /> <strong>error in (no error)</strong> (<em>error_cluster</em>).</li>
+</ul>
+<p><strong><em>Indicators</em></strong></p>
+<ul>
+<li><img alt="clusterOut icon" src="../../../../../img/labview/clusterOut.png" />  <a href="../../Clusters/basic.html#basicinformation"><strong>basicInformation out</strong></a> (<em>cluster</em>): estructura de datos que contiene la información basica para poder hacer las llamadas a las funciones.</li>
+<li><img alt="clusterOut icon" src="../../../../../img/labview/clusterOut.png" />  <a href="../../Clusters/resp.html#flexiblemanualinspection"><strong>respuestaFlexibleManualInspection</strong></a> (<em>cluster</em>): información devuelta por el servidor al hacer la consulta.</li>
+<li><img alt="errorOut icon" src="../../../../../img/labview/errorOut.png" /> <strong>error out</strong> (<em>error_cluster</em>).</li>
+</ul>
+<h3 id="getallstations">GetAllStations</h3>
+<p><img src="../../../../../img\labview\functions\other\WrapperController_lvlib_GetAllStationsc.png" alt="GetAllStations Icon" hspace="0" class="center"></p>
+<p>Mediante esta función podemos obtener todas las estaciones dadas de alta en QLSCM.</p>
+<p><strong><em>Controls</em></strong></p>
+<ul>
+<li><img alt="cluster icon" src="../../../../../img/labview/cluster.png" />  <a href="../../Clusters/basic.html#basicinformation"><strong>basicInformation in</strong></a> (<em>cluster</em>): estructura de datos que contiene la información basica para poder hacer las llamadas a las funciones.</li>
+<li><img alt="error icon" src="../../../../../img/labview/error.png" /> <strong>error in (no error)</strong> (<em>error_cluster</em>).</li>
+</ul>
+<p><strong><em>Indicators</em></strong></p>
+<ul>
+<li><img alt="clusterOut icon" src="../../../../../img/labview/clusterOut.png" />  <a href="../../Clusters/basic.html#basicinformation"><strong>basicInformation out</strong></a> (<em>cluster</em>): estructura de datos que contiene la información basica para poder hacer las llamadas a las funciones.</li>
+<li><img alt="arrayClusterOut icon" src="../../../../../img/labview/arrayClusterOut.png" />  <a href="../../Clusters/resp.html#getallstations"><strong>ArrayDeStations</strong></a> (<em>array</em>): información devuelta por el servidor al hacer la consulta.</li>
+<li><img alt="errorOut icon" src="../../../../../img/labview/errorOut.png" /> <strong>error out</strong> (<em>error_cluster</em>).</li>
+</ul>
+<h3 id="getfmihhconfiguration">GetFmiHhConfiguration</h3>
+<p><img src="../../../../../img\labview\functions\other\WrapperController_lvlib_GetFmiHhConfigurationc.png" alt="GetFmiHhConfiguration Icon" hspace="0" class="center"></p>
+<p>Obtiene la configuración actual del FMI Handheld.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Sigue en desarrollo</p>
+</div>
+<p><strong><em>Controls</em></strong></p>
+<ul>
+<li><img alt="cluster icon" src="../../../../../img/labview/cluster.png" />  <a href="../../Clusters/basic.html#basicinformation"><strong>basicInformation in</strong></a> (<em>cluster</em>): estructura de datos que contiene la información basica para poder hacer las llamadas a las funciones.</li>
+<li><img alt="string icon" src="../../../../../img/labview/string.png" /> <strong>direccionIP</strong> (<em>string</em>): <strong><em>DESCONOCIDO</em></strong>.</li>
+<li><img alt="error icon" src="../../../../../img/labview/error.png" /> <strong>error in (no error)</strong> (<em>error_cluster</em>).</li>
+</ul>
+<p><strong><em>Indicators</em></strong></p>
+<ul>
+<li><img alt="clusterOut icon" src="../../../../../img/labview/clusterOut.png" />  <a href="../../Clusters/basic.html#basicinformation"><strong>basicInformation out</strong></a> (<em>cluster</em>): estructura de datos que contiene la información basica para poder hacer las llamadas a las funciones.</li>
+<li><img alt="objectOut icon" src="../../../../../img/labview/objectOut.png" /> <strong>RespuestaGetFmiHhConfiguration</strong> (<em>.NET object</em>): información devuelta por el servidor al hacer la consulta.</li>
+<li><img alt="errorOut icon" src="../../../../../img/labview/errorOut.png" /> <strong>error out</strong> (<em>error_cluster</em>).</li>
+</ul>
+<h3 id="getfmistatuscodesinformation">GetFmiStatusCodesInformation</h3>
+<p><img src="../../../../../img\labview\functions\other\WrapperController_lvlib_GetFmiStatusCodesInformationc.png" alt="GetFmiStatusCodesInformation Icon" hspace="0" class="center"></p>
+<p>Obtiene los codigos utilizados para representar los distintos estados del FMI.</p>
+<p><strong><em>Controls</em></strong></p>
+<ul>
+<li><img alt="cluster icon" src="../../../../../img/labview/cluster.png" />  <a href="../../Clusters/basic.html#basicinformation"><strong>basicInformation in</strong></a> (<em>cluster</em>): estructura de datos que contiene la información basica para poder hacer las llamadas a las funciones.</li>
+<li><img alt="error icon" src="../../../../../img/labview/error.png" /> <strong>error in (no error)</strong> (<em>error_cluster</em>).</li>
+</ul>
+<p><strong><em>Indicators</em></strong></p>
+<ul>
+<li><img alt="clusterOut icon" src="../../../../../img/labview/clusterOut.png" />  <a href="../../Clusters/basic.html#basicinformation"><strong>basicInformation out</strong></a> (<em>cluster</em>): estructura de datos que contiene la información basica para poder hacer las llamadas a las funciones.</li>
+<li><img alt="cluster2Out icon" src="../../../../../img/labview/cluster2Out.png" />  <a href="../../Clusters/resp.html#getfmistatuscodesinformation"><strong>respuestaGetFmiCodesInformation out</strong></a> (<em>cluster</em>): información devuelta por el servidor al hacer la consulta.</li>
+<li><img alt="errorOut icon" src="../../../../../img/labview/errorOut.png" /> <strong>error out</strong> (<em>error_cluster</em>).</li>
+</ul>
+<h3 id="getprocessdatahistorywithoutrangeofdate">GetProcessDataHistoryWithoutRangeOfDate</h3>
+<p><img src="../../../../../img\labview\functions\other\WrapperController_lvlib_GetProcessDataHistoryWithoutRangeOfDatec.png" alt="GetProcessDataHistoryWithoutRangeOfDate Icon" hspace="0" class="center"></p>
+<p>Obtiene el historial de piezas que han pasado por una máquina en concreto.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>en desarrollo</p>
+</div>
+<p><strong><em>Controls</em></strong></p>
+<ul>
+<li><img alt="cluster icon" src="../../../../../img/labview/cluster.png" />  <a href="../../Clusters/basic.html#basicinformation"><strong>basicInformation in</strong></a> (<em>cluster</em>): estructura de datos que contiene la información basica para poder hacer las llamadas a las funciones.</li>
+<li>
+<p><img alt="cluster icon" src="../../../../../img/labview/cluster.png" />  <a href="../../Clusters/args.html#getprocessdatahistory"><strong>parametrosGetProcessDataHistory</strong></a> (<em>cluster</em>): parametros necesarios para hacer la llamada.</p>
+<div class="admonition warning">
+<p class="admonition-title">Cluster variables required</p>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> <img alt="array Icon" src="../../../../../img/labview/arrayString.png" /> <strong>stationID</strong></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> <img alt="int Icon" src="../../../../../img/labview/int.png" /> <strong>maxRows</strong></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <img alt="datetime Icon" src="../../../../../img/labview/datetime.png" />  <strong>fromDate</strong></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> <img alt="datetime Icon" src="../../../../../img/labview/datetime.png" />  <strong>toDate</strong></li>
+</ul>
+</div>
+</li>
+<li>
+<p><img alt="error icon" src="../../../../../img/labview/error.png" /> <strong>error in (no error)</strong> (<em>error_cluster</em>).</p>
+</li>
+</ul>
+<p><strong><em>Indicators</em></strong></p>
+<ul>
+<li><img alt="clusterOut icon" src="../../../../../img/labview/clusterOut.png" />  <a href="../../Clusters/basic.html#basicinformation"><strong>basicInformation out</strong></a> (<em>cluster</em>): estructura de datos que contiene la información basica para poder hacer las llamadas a las funciones.</li>
+<li><img alt="arrayClusterOut icon" src="../../../../../img/labview/arrayClusterOut.png" />  <a href="../../Clusters/resp.html#getprocessdatahistory"><strong>ArrayDeRespuestasGetProcessDataHistory</strong></a> (<em>array</em>): información devuelta por el servidor al hacer la consulta.</li>
+<li><img alt="errorOut icon" src="../../../../../img/labview/errorOut.png" /> <strong>error out</strong> (<em>error_cluster</em>).</li>
+</ul>
+<h3 id="getprocessdatahistorywithrangeofdate">GetProcessDataHistoryWithRangeOfDate</h3>
+<p><img src="../../../../../img\labview\functions\other\WrapperController_lvlib_GetProcessDataHistoryWithoutRangeOfDatec.png" alt="GetProcessDataHistoryWithoutRangeOfDate Icon" hspace="0" class="center"></p>
+<p>Obtiene el historial de piezas que han pasado por una máquina en concreto.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>en desarrollo</p>
+</div>
+<p><strong><em>Controls</em></strong></p>
+<ul>
+<li><img alt="cluster icon" src="../../../../../img/labview/cluster.png" />  <a href="../../Clusters/basic.html#basicinformation"><strong>basicInformation in</strong></a> (<em>cluster</em>): estructura de datos que contiene la información basica para poder hacer las llamadas a las funciones.</li>
+<li>
+<p><img alt="cluster icon" src="../../../../../img/labview/cluster.png" />  <a href="../../Clusters/args.html#getprocessdatahistory"><strong>parametrosGetProcessDataHistory</strong></a> (<em>cluster</em>): parametros necesarios para hacer la llamada.</p>
+<div class="admonition warning">
+<p class="admonition-title">Cluster variables required</p>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> <img alt="array Icon" src="../../../../../img/labview/arrayString.png" /> <strong>stationID</strong></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> <img alt="int Icon" src="../../../../../img/labview/int.png" /> <strong>maxRows</strong></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> <img alt="datetime Icon" src="../../../../../img/labview/datetime.png" />  <strong>fromDate</strong></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> <img alt="datetime Icon" src="../../../../../img/labview/datetime.png" />  <strong>toDate</strong></li>
+</ul>
+</div>
+</li>
+<li>
+<p><img alt="error icon" src="../../../../../img/labview/error.png" /> <strong>error in (no error)</strong> (<em>error_cluster</em>).</p>
+</li>
+</ul>
+<p><strong><em>Indicators</em></strong></p>
+<ul>
+<li><img alt="clusterOut icon" src="../../../../../img/labview/clusterOut.png" />  <a href="../../Clusters/basic.html#basicinformation"><strong>basicInformation out</strong></a> (<em>cluster</em>): estructura de datos que contiene la información basica para poder hacer las llamadas a las funciones.</li>
+<li><img alt="arrayClusterOut icon" src="../../../../../img/labview/arrayClusterOut.png" />  <a href="../../Clusters/resp.html#getprocessdatahistory"><strong>ArrayDeRespuestasGetProcessDataHistory</strong></a> (<em>array</em>): información devuelta por el servidor al hacer la consulta.</li>
+<li><img alt="errorOut icon" src="../../../../../img/labview/errorOut.png" /> <strong>error out</strong> (<em>error_cluster</em>).</li>
+</ul>
+<h3 id="heartbeat">Heartbeat</h3>
+<p><img src="../../../../../img\labview\functions\other\WrapperController_lvlib_Heartbeatc.png" alt="Heartbeat Icon" hspace="0" class="center"></p>
+<p>Manda un latido al servidor y espera la respuesta, sirve para comprobar que el servicio sigue activo.</p>
+<p><strong><em>Controls</em></strong></p>
+<ul>
+<li><img alt="cluster icon" src="../../../../../img/labview/cluster.png" />  <a href="../../Clusters/basic.html#basicinformation"><strong>basicInformation in</strong></a> (<em>cluster</em>): estructura de datos que contiene la información basica para poder hacer las llamadas a las funciones.</li>
+<li><img alt="error icon" src="../../../../../img/labview/error.png" /> <strong>error in (no error)</strong> (<em>error_cluster</em>).</li>
+</ul>
+<p><strong><em>Indicators</em></strong></p>
+<ul>
+<li><img alt="clusterOut icon" src="../../../../../img/labview/clusterOut.png" />  <a href="../../Clusters/basic.html#basicinformation"><strong>basicInformation out</strong></a> (<em>cluster</em>): estructura de datos que contiene la información basica para poder hacer las llamadas a las funciones.</li>
+<li><img alt="booleanOut icon" src="../../../../../img/labview/booleanOut.png" /> <strong>heartbeat</strong> (<em>boolean</em>): valor de verdad que indica si sigue activo el servicio de QTS (<code class="codehilite"><span class="k">true</span></code>) o no (<code class="codehilite"><span class="k">false</span></code>).</li>
+<li><img alt="errorOut icon" src="../../../../../img/labview/errorOut.png" /> <strong>error out</strong> (<em>error_cluster</em>).</li>
+</ul>
+<h3 id="lookupforparent">LookUpForParent</h3>
+<p><img src="../../../../../img\labview\functions\other\WrapperController_lvlib_LookUpForParentc.png" alt="LookUpForParent Icon" hspace="0" class="center"></p>
+<p>Comprueba si dicha pieza está ensamblada en alguna otra, sienda está ultima lo denominado como <em>"Parent"</em>.</p>
+<p><strong><em>Controls</em></strong></p>
+<ul>
+<li><img alt="cluster icon" src="../../../../../img/labview/cluster.png" />  <a href="../../Clusters/basic.html#basicinformation"><strong>basicInformation in</strong></a> (<em>cluster</em>): estructura de datos que contiene la información basica para poder hacer las llamadas a las funciones.</li>
+<li><img alt="string icon" src="../../../../../img/labview/string.png" /> <strong>componentId</strong> (<em>string</em>): identificador de la pieza de la cual se quiere saber si es componente de otra mayor (parent).</li>
+<li><img alt="error icon" src="../../../../../img/labview/error.png" /> <strong>error in (no error)</strong> (<em>error_cluster</em>).</li>
+</ul>
+<p><strong><em>Indicators</em></strong></p>
+<ul>
+<li><img alt="clusterOut icon" src="../../../../../img/labview/clusterOut.png" />  <a href="../../Clusters/basic.html#basicinformation"><strong>basicInformation out</strong></a> (<em>cluster</em>): estructura de datos que contiene la información basica para poder hacer las llamadas a las funciones.</li>
+<li><img alt="clusterOut icon" src="../../../../../img/labview/clusterOut.png" />  <a href="../../Clusters/resp.html#lookupforparent"><strong>RespuestaLookUpForParent</strong></a> (<em>cluster</em>): respuesta con la informacion devuelta por el servidor.</li>
+<li><img alt="errorOut icon" src="../../../../../img/labview/errorOut.png" /> <strong>error out</strong> (<em>error_cluster</em>).</li>
+</ul>
+<h3 id="partusage">PartUsage</h3>
+<p><img src="../../../../../img\labview\functions\other\WrapperController_lvlib_PartUsagec.png" alt="PartUsage Icon" hspace="0" class="center"></p>
+<p>Función que comprueba la cantidad de veces que una pieza ha sido reutilizada, dicha función tiene sentido a la hora de hablar de cuarentenas, donde una pieza ensamblada en otra en cuarentena es reutilizada.</p>
+<p><strong><em>Controls</em></strong></p>
+<ul>
+<li><img alt="cluster icon" src="../../../../../img/labview/cluster.png" />  <a href="../../Clusters/basic.html#basicinformation"><strong>basicInformation in</strong></a> (<em>cluster</em>): estructura de datos que contiene la información basica para poder hacer las llamadas a las funciones.</li>
+<li><img alt="cluster icon" src="../../../../../img/labview/cluster.png" />  <a href="../../Clusters/basic.html#unitinfo"><strong>UnitInfo</strong></a> (<em>cluster</em>): identificador de la pieza de la cual se quiere saber la cantidad de veces que ha sido reutilizada.</li>
+<li><img alt="error icon" src="../../../../../img/labview/error.png" /> <strong>error in (no error)</strong> (<em>error_cluster</em>).</li>
+</ul>
+<p><strong><em>Indicators</em></strong></p>
+<ul>
+<li><img alt="clusterOut icon" src="../../../../../img/labview/clusterOut.png" />  <a href="../../Clusters/basic.html#basicinformation"><strong>basicInformation out</strong></a> (<em>cluster</em>): estructura de datos que contiene la información basica para poder hacer las llamadas a las funciones.</li>
+<li><img alt="arrayClusterOut icon" src="../../../../../img/labview/arrayClusterOut.png" />  <a href="../../Clusters/resp.html#partusage"><strong>ArrayDeRespuestasPartUsage</strong></a> (<em>array</em>): array con las respuestas recibidas.</li>
+<li><img alt="errorOut icon" src="../../../../../img/labview/errorOut.png" /> <strong>error out</strong> (<em>error_cluster</em>).</li>
+</ul>
+<h3 id="testcurrentsettingdatabaseconnection">TestCurrentSettingDatabaseConnection</h3>
+<p><img src="../../../../../img\labview\functions\other\WrapperController_lvlib_TestCurrentSettingsDatabaseConnectionc.png" alt="TestCurrentSettingsDatabaseConnection Icon" hspace="0" class="center"></p>
+<p>Función que comprueba si la configuración de conexión actual a la base de datos funciona correctamente.</p>
+<p><strong><em>Controls</em></strong></p>
+<ul>
+<li><img alt="cluster icon" src="../../../../../img/labview/cluster.png" />  <a href="../../Clusters/basic.html#basicinformation"><strong>basicInformation in</strong></a> (<em>cluster</em>): estructura de datos que contiene la información basica para poder hacer las llamadas a las funciones.</li>
+<li><img alt="error icon" src="../../../../../img/labview/error.png" /> <strong>error in (no error)</strong> (<em>error_cluster</em>).</li>
+</ul>
+<p><strong><em>Indicators</em></strong></p>
+<ul>
+<li><img alt="clusterOut icon" src="../../../../../img/labview/clusterOut.png" />  <a href="../../Clusters/basic.html#basicinformation"><strong>basicInformation out</strong></a> (<em>cluster</em>): estructura de datos que contiene la información basica para poder hacer las llamadas a las funciones.</li>
+<li><img alt="booleanOut icon" src="../../../../../img/labview/booleanOut.png" /> <strong>isCorrectConfiguration</strong> (<em>boolean</em>): valor de verdad que indica si la configuración es correcta (<code class="codehilite"><span class="k">true</span></code>) o no (<code class="codehilite"><span class="k">false</span></code>).</li>
+<li><img alt="errorOut icon" src="../../../../../img/labview/errorOut.png" /> <strong>error out</strong> (<em>error_cluster</em>).</li>
+</ul>
+<h3 id="testsettingdatabaseconnection">TestSettingDatabaseConnection</h3>
+<p><img src="../../../../../img\labview\functions\other\WrapperController_lvlib_TestSettingsDatabaseConnectionc.png" alt="TestSettingsDatabaseConnection Icon" hspace="0" class="center"></p>
+<p>Función que sirve para probar una nueva configuración para la conexion con la base de datos.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>en desarrollo</p>
+</div>
+<p><strong><em>Controls</em></strong></p>
+<ul>
+<li><img alt="cluster icon" src="../../../../../img/labview/cluster.png" />  <a href="../../Clusters/basic.html#basicinformation"><strong>basicInformation in</strong></a> (<em>cluster</em>): estructura de datos que contiene la información basica para poder hacer las llamadas a las funciones.</li>
+<li><img alt="cluster icon" src="../../../../../img/labview/cluster.png" />  <a href="../../Clusters/args.html#testdatabaseconnection"><strong>parametrosTestDatabaseConnection</strong></a> (<em>cluster</em>): identificador de la pieza de la cual se quiere saber la cantidad de veces que ha sido reutilizada.</li>
+<li><img alt="error icon" src="../../../../../img/labview/error.png" /> <strong>error in (no error)</strong> (<em>error_cluster</em>).</li>
+</ul>
+<p><strong><em>Indicators</em></strong></p>
+<ul>
+<li><img alt="clusterOut icon" src="../../../../../img/labview/clusterOut.png" />  <a href="../../Clusters/basic.html#basicinformation"><strong>basicInformation out</strong></a> (<em>cluster</em>): estructura de datos que contiene la información basica para poder hacer las llamadas a las funciones.</li>
+<li><img alt="booleanOut icon" src="../../../../../img/labview/booleanOut.png" /> <strong>isCompletedConnectionSuccesfully</strong> (<em>boolean</em>): valor de verdad que indica si la configuración es correcta (<code class="codehilite"><span class="k">true</span></code>) o no (<code class="codehilite"><span class="k">false</span></code>).</li>
+<li><img alt="errorOut icon" src="../../../../../img/labview/errorOut.png" /> <strong>error out</strong> (<em>error_cluster</em>).</li>
+</ul></article></div></div></main><footer class="md-footer"><div class="md-footer-nav"><nav class="md-footer-nav__inner md-grid"><a href="basic.html" title="Basic Functions" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev"><div class="md-flex__cell md-flex__cell--shrink"><i class="md-icon md-icon--arrow-back md-footer-nav__button"></i></div><div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title"><span class="md-flex__ellipsis"><span class="md-footer-nav__direction">Previous</span>Basic Functions</span></div></a><a href="auxfunc.html" title="Auxiliar Functions" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next"><div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title"><span class="md-flex__ellipsis"><span class="md-footer-nav__direction">Next</span>Auxiliar Functions</span></div><div class="md-flex__cell md-flex__cell--shrink"><i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i></div></a></nav></div><div class="md-footer-meta md-typeset"><div class="md-footer-meta__inner md-grid"><div class="md-footer-copyright"><div class="md-footer-copyright__highlight">Ford Motor Company (VEP)</div>powered by <a href="https://www.mkdocs.org">MkDocs</a> and <a href="https://squidfunk.github.io/mkdocs-material/">Material for MkDocs</a></div><div class="md-footer-social"><link rel="stylesheet" href="../../../../../assets/fonts/font-awesome.css"> <a href="https://www.linkedin.com/company/ford-motor-company" class="md-footer-social__link fa fa-linkedin"></a>  <a href="https://twitter.com/ford" class="md-footer-social__link fa fa-twitter"></a>  <a href="https://www.facebook.com/Ford/" class="md-footer-social__link fa fa-facebook"></a>  <a href="https://www.flickr.com/photos/fordmotorcompany" class="md-footer-social__link fa fa-flickr"></a>  <a href="https://www.youtube.com/user/Ford" class="md-footer-social__link fa fa-youtube"></a>  <a href="https://www.instagram.com/atfordonline" class="md-footer-social__link fa fa-instagram"></a>  <a href="mailto:atford@ford.com" class="md-footer-social__link fa fa-envelope"></a> </div></div></div></footer></div><script src="../../../../../assets/javascripts/application.b260a35d.js"></script><script>app.initialize({version:"1.0.4",url:{base:"../../../../.."}})</script></body></html>
